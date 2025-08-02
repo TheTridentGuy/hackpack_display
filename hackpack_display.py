@@ -46,7 +46,7 @@ def draw_info(canvas):
     canvas.text((PADDING, y+11), f"P", color, font_sm)
     canvas.text((PADDING, y+18), f"U", color, font_sm)
     y += FONT_LG_HEIGHT
-
+    
     interfaces = psutil.net_if_addrs()
     interface_stats = psutil.net_if_stats()
     for ifname, addr in interfaces.items():
